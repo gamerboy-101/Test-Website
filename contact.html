@@ -9,7 +9,7 @@
     <body>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand" href="#">Puzzle</a>
+          <a class="navbar-brand" href="index.html">Puzzle</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -30,6 +30,7 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="https://www.amazon.com/">Amazon</a></li>
+                  <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool">Color Picker Tool</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="https://www.pixabay.com/">Pixabay</a></li>
@@ -47,27 +48,56 @@
         </div>
       </nav>
       <br>
-        <div id="containercontact" class="container" style="width: 60%;">
-                <div id="content" class="divborder">   
-                    <h1 id="title">Contact Us</h1> 
-                    <form action="success.html">
-                        <label for="fname" class="form-label">Full Name</label>
-                        <input type="text" id="fname" name="fname" class="form-control"/>
-                        <br/><br/> 
-                        <label for="email" class="form-label">Email Address</label>
-                        <input type="email" id="emailaddress" name="emailaddress" class="form-control"/>
-                        <br/><br/>
-                        <label for="query" class="form-label">Query</label><br/>
-                        <textarea id="query" name="query" class="form-control"></textarea>
-                        <br/><br/>
-                        <input type="submit" value="submit" onclick="buttonclicked()" class="btn btn-primary"/>
-                    </form> 
-                </div>
-        
-                <div id="footer">
-                    By anonymous_guy.
-                </div>
-        </div>    
+
+      <div id="containercontact" class="container" style="width: 70%;">
+        <div class="row">
+          <div class="col-8">
+            <h4 class="text-primary">User Info</h4>
+            <P class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolores itaque laboriosam molestias, optio eligendi voluptate magnam. Obcaecati itaque enim repellat, modi a voluptate molestias, necessitatibus voluptas officia cupiditate iste!</P>
+          </div>
+          <div class="col-3 offset-md-1">
+            <h4 class="text-primary">Contact Info</h4>
+            <ul>
+              <li><a href="#" class="text-info">twitter</a></li>
+              <li><a href="#" class="text-info">facebook</a></li>
+              <li><a href="#" class="text-info">instagram</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <form class="row g-3">
+          <div class="col-md-5">
+            <label for="inputFirstName4" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="inputFirstName4">
+          </div>
+          <div class="col-md-5">
+            <label for="inputLastName4" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="inputLastName4">
+          </div>
+          <div class="col-10">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-10">
+            <label for="inputQuery" class="form-label">Your Query</label>
+            <textarea class="form-control" id="inputQuery"></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+
+        <br>
+        <hr>
+
+        <footer class="container">
+          <p>&copy; By anonymous_guy.</p>
+        </footer>  
+      </div>
     
 
         <!-- Javascript Bundle with Popper-->
