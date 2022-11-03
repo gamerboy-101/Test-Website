@@ -1,8 +1,18 @@
 function buttonclicked(){
-    alert('Click OK to continue');
+    alert('Click OK to continue if you have relevant feedback');
 }
 
-function warning(){
-    let var1 = document.getElementById('targettag');
-    var1.innerHTML = "Javascript Text"
-}
+$(function(){
+    var pages = ['index', 'about', 'contact'];
+    var pathname = window.location.pathname;
+
+    $('.nav-link').each(function(i){ 
+        if(pathname.includes(pages[i])){
+            $(this).addClass('active');
+            $(this).attr('aria-current', 'page');
+        }
+        else if(this.className.includes('active')){
+            $(this).removeClass('active');
+        }
+    });
+});
